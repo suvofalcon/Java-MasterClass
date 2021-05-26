@@ -11,7 +11,7 @@ package com.suvos.javamasterclass.firststeps;
  */
 public class HelloWorld {
     
-    // main method
+    // main method (legendary statement!!)
     public static void main(String[] args){
         System.out.println("Hello World!!");
     }
