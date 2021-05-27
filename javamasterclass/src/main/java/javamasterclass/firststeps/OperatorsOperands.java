@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.suvos.javamasterclass.firststeps;
+package javamasterclass.firststeps;
 
 /**
  *
@@ -89,6 +89,8 @@ public class OperatorsOperands {
         boolean isRemainder = (operationRemainder == 0)? true: false;
         System.out.println("Operation Value - "+ operationValue);
         System.out.println("isRemainder - "+ isRemainder);
+        
+        // This will not be displayed
         if(!isRemainder){
             System.out.println("We got some remainder");
         }
