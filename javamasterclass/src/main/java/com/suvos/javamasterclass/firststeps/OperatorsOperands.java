@@ -89,6 +89,8 @@ public class OperatorsOperands {
         boolean isRemainder = (operationRemainder == 0)? true: false;
         System.out.println("Operation Value - "+ operationValue);
         System.out.println("isRemainder - "+ isRemainder);
+        
+        // This will not be displayed
         if(!isRemainder){
             System.out.println("We got some remainder");
         }
