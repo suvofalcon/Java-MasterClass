@@ -5,8 +5,6 @@
  */
 package javamasterclass.keywordsexpressions;
 
-import java.io.BufferedReader;
-
 /**
  *
  * @author suvo
@@ -56,7 +54,7 @@ public class KeywordsExpressions {
         int newLevelCompleted = 8;
         int newBonus = 200;
         
-        if (gameOver){
+        if (newGameOver){
             int finalScore = newScore + (newLevelCompleted * newBonus);
             System.out.println("Your Final Score was - "+ finalScore);
         }
