@@ -29,12 +29,13 @@ public class KeywordsExpressions {
         System.out.println("This is" +
                 " another"+
                 " still more!!");
-        
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
-        
+        calculateScore(true, 800, 5, 100);
+        calculateScore(true, 10000, 8, 200);
+    }
+
+    // Defining a method
+    public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
+
         if (score < 5000 && score > 1000){
             System.out.println("Your Score was less than 5000 but greater than 1000");
         }else if (score < 1000){
@@ -42,21 +43,12 @@ public class KeywordsExpressions {
         }else{
             System.out.println("Got Here");
         }
-        
         if (gameOver){
             int finalScore = score + (levelCompleted * bonus); // finalScore is a variable with local scope
-            System.out.println("Your final score was - "+ finalScore); 
+            finalScore += 2000;
+            System.out.println("Your final score was - "+ finalScore);
+            return finalScore;
         }
-        
-//      int savedFinalScore = finalScore; // cannot access variable created in local scope
-        boolean newGameOver = true;
-        int newScore = 10000;
-        int newLevelCompleted = 8;
-        int newBonus = 200;
-        
-        if (newGameOver){
-            int finalScore = newScore + (newLevelCompleted * newBonus);
-            System.out.println("Your Final Score was - "+ finalScore);
-        }
+        return -1;
     }
 }
