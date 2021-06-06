@@ -15,5 +15,9 @@ public class Main {
 
         // Testing Barking Dog
         System.out.println(BarkingDog.shouldWakeUp(true, 1));
+        // Testing Leap Year
+        System.out.println(LeapYearCalculator.isLeapYear(1924));
+        //Testing Decimal Comparator
+        System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.176, 3.175));
     }
 }
