@@ -31,6 +31,8 @@ public class Methods {
         displayHighScorePosition("John", 4);
         int newScore = calculateHighScorePosition(50);
         System.out.println("As per the high score position the new score is " + newScore);
+
+        printEqual(1, 1, 2);
     }
 
     // Defining a method
@@ -66,5 +68,22 @@ public class Methods {
             position = 3;
         }
         return position;
+    }
+
+    public static void printEqual(int x, int y, int z){
+        if((x < 0) || (y < 0) || (z < 0)) System.out.println("Invalid Value");
+        else if((x == y) && (x == z) && (y == z)) System.out.println("All numbers are equal");
+        else if((x != y) && (x != z) && (y != z)) System.out.println("All numbers are different");
+        else System.out.println("Neither all are equal or different");
+    }
+
+    public static boolean isCatPlaying(boolean summer, int temperature){
+        boolean isPlaying = false;
+        if (summer){
+            if (temperature >= 25 && temperature <= 45) isPlaying = true;
+        } else {
+            if (temperature >= 25 && temperature <= 35) isPlaying = true;
+        }
+        return isPlaying;
     }
 }

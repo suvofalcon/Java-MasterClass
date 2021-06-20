@@ -19,5 +19,8 @@ public class Main {
         System.out.println(LeapYearCalculator.isLeapYear(1924));
         //Testing Decimal Comparator
         System.out.println(DecimalComparator.areEqualByThreeDecimalPlaces(3.176, 3.175));
+        //Testing isTeen Method
+        System.out.println(TeenNumberChecker.hasTeen(35,25, 63));
+        System.out.println(TeenNumberChecker.isTeen(14));
     }
 }
